@@ -7,7 +7,8 @@ class MyAddButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    CartModel cart = Provider.of<CartModel>(context, listen: false);
+
+    CartModel cart = context.read();
 
     return IconButton(
       icon: const Icon(Icons.add, size: 62,),

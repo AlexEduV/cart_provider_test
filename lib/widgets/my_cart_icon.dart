@@ -8,7 +8,7 @@ class MyCartIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    CartModel cart = Provider.of<CartModel>(context);
+    CartModel cart = context.watch();
 
     return IconButton(
       icon: Badge(
